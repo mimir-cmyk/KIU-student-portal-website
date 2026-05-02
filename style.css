@@ -58,6 +58,23 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-switch img {
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    
+}
+.lang-switch img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
 
 .bg-video {
     position: absolute;
