@@ -16,13 +16,15 @@
         <div class="nav-links">
         
             <ul>
-                <li><a href="">About KIU</a></li>
-                <li><a href="">Programs</a></li>
-                <li><a href="">Admissions</a></li>
-                <li><a href="">Students</a></li>
-              <li><a href="">Research and Projects</a></li>
+                <li><a href="#about">About KIU</a></li>
+                <!--programs dropdown -->
+                <li class="dropdown">
+                    <a href="#explore">Programs</a>
+                </li>
+                <li><a href="#admissions">Admissions</a></li>
                <li><a href="">News</a></li>
                <li><a href="">Campus</a></li>
+               <li><a href="">Contact</a></li>
               
             </ul>
         </div>
@@ -39,12 +41,12 @@
  
     <h1> A PLACE WHERE KNOWLEDGE </h1>
        <h1>  CREATES FUTURE. </h1>
-       <a href="" class="hero-btn"> Our Programs</a>
+       <a href="#explore" class="hero-btn"> Explore Courses</a>
     </div>
 
      </section>
-    <section class="aboutKIU">
-    <h1>ABOUT KIU</h1>
+    <section class="aboutKIU" id="about">
+    <h1>About KIU</h1>
      <div class="about-content">
         <!-- left: text column -->
         <div class="about-text">
@@ -62,7 +64,7 @@ KIU collaborates with Technical University of Munich (TUM), the leading European
     </p>
     </div>
 
-    <!-- Right: flip card -->
+    <!-- right: flip card -->
         <div class="scene">
             <div class="card">
                 <div class="face-front">
@@ -76,5 +78,323 @@ KIU collaborates with Technical University of Munich (TUM), the leading European
     </div>
     </section>
 
+    <section class="courses-section" id="explore">
+    <h1>Schools and Programs</h1>
+
+    <!-- hidden radio inputs control the filter -->
+    <input type="radio" name="filter" id="f-all"      hidden checked>
+    <input type="radio" name="filter" id="f-bachelor" hidden>
+    <input type="radio" name="filter" id="f-master"   hidden>
+    <input type="radio" name="filter" id="f-single"   hidden>
+
+    <div class="filter-bar">
+        <label for="f-all"      class="filter-btn">All</label>
+        <label for="f-bachelor" class="filter-btn">Bachelor's</label>
+        <label for="f-master"   class="filter-btn">Master's</label>
+        <label for="f-single"   class="filter-btn">Single-Cycle</label>
+    </div>
+
+    <div class="cards-grid">
+
+        <div class="program-card bachelor">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/vbnype38chhqczw.jpg" alt="Computer Science">
+                <span class="card-badge">Bachelor's</span>
+            </div>
+            <div class="card-body">
+                <h3>Computer Science</h3>
+                <p>Algorithms, software engineering, AI and systems programming in a research-driven environment.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card bachelor">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/qv76dz5m2zfp0xp.jpg" alt="Mathematics">
+                <span class="card-badge">Bachelor's</span>
+            </div>
+            <div class="card-body">
+                <h3>Mathematics</h3>
+                <p>Pure and applied mathematics with a focus on analytical thinking and problem solving.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card bachelor">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/ytn0lc6zqcidd3m.jpg" alt="Management">
+                <span class="card-badge">Bachelor's</span>
+            </div>
+            <div class="card-body">
+                <h3>Management</h3>
+                <p>Business strategy, leadership and organizational management for tomorrow's economy.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card bachelor">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/j9bwqz018np7p1m.png" alt="Physics">
+                <span class="card-badge">Bachelor's</span>
+            </div>
+            <div class="card-body">
+                <h3>Physics</h3>
+                <p>Classical and modern physics, from quantum mechanics to astrophysics and applied optics.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card bachelor">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/ygb1kgki7dpy7o2.png" alt="Architecture">
+                <span class="card-badge">Bachelor's</span>
+            </div>
+            <div class="card-body">
+                <h3>Architecture</h3>
+                <p>Design, structural theory and urban planning blending creativity with technical mastery.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card bachelor">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/z2p0vfh882pdlvk.jpg" alt="Design">
+                <span class="card-badge">Bachelor's</span>
+            </div>
+            <div class="card-body">
+                <h3>Design</h3>
+                <p>Visual communication, product design and creative practice for a digital world.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+<div class="program-card bachelor">
+    <div class="card-img-wrap">
+        <img src="https://www.kiu.edu.ge/uploads_script/services/e77ywif2jffi8b9.jpg" alt="Psychology">
+        <span class="card-badge">Bachelor's</span>
+    </div>
+    <div class="card-body">
+        <h3>Psychology</h3>
+        <p>Human behaviour, cognitive science and mental health within a rigorous scientific framework.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+    </div>
+</div>
+
+<div class="program-card bachelor">
+    <div class="card-img-wrap">
+        <img src="https://www.kiu.edu.ge/uploads_script/services/qv76dz5m2zfp0xp.jpg" alt="Mathematics and Applications">
+        <span class="card-badge">Bachelor's</span>
+    </div>
+    <div class="card-body">
+        <h3>Mathematics and Applications</h3>
+        <p>Applied mathematics bridging theory with real-world problems in science, engineering and finance.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+    </div>
+</div>
+        <div class="program-card bachelor">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/fuqu1ncb2iy72l3.jpg" alt="Law">
+                <span class="card-badge">Bachelor's</span>
+            </div>
+            <div class="card-body">
+                <h3>Law</h3>
+                <p>Georgian and international law, jurisprudence and legal practice in modern society.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card master">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/h9fhv870q9xy78p.jpg" alt="Embedded Computing Systems">
+                <span class="card-badge">Master's</span>
+            </div>
+            <div class="card-body">
+                <h3>Embedded Computing Systems</h3>
+                <p>Real-time systems, microcontrollers, hardware-software integration and IoT engineering.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card master">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/hd55m8pqflk46d7.jpg" alt="Finances">
+                <span class="card-badge">Master's</span>
+            </div>
+            <div class="card-body">
+                <h3>Finances</h3>
+                <p>Financial markets, corporate finance, risk management and macroeconomic policy.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card master">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/xs62qpn8m61uigq.jpg" alt="Intellectual Property">
+                <span class="card-badge">Master's</span>
+            </div>
+            <div class="card-body">
+                <h3>Intellectual Property</h3>
+                <p>Patent law, copyright, trademarks and the legal frameworks of the knowledge economy.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-card single">
+            <div class="card-img-wrap">
+                <img src="https://www.kiu.edu.ge/uploads_script/services/19htamplwpf0dtt.jpg" alt="Medicine">
+                <span class="card-badge">Single-Cycle</span>
+            </div>
+            <div class="card-body">
+                <h3>Medicine</h3>
+                <p>A six-year integrated program in clinical medicine, biomedical sciences and patient care.</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- page hero banner -->
+   <div class="admissions-hero">
+    <div class="admissions-hero-text">
+        <h1>Apply to KIU</h1>
+        <p>Begin your journey at Kutaisi International University</p>
+    </div>
+
+    
+    <!--form -->
+    <section class="admissions-section" id="admissions">
+
+        <div class="form-intro">
+            <h1>Application Form</h1>
+            <p>Fill in the form below. All fields marked <span class="required-star">*</span> are required.</p>
+        </div>
+         <form class="admission-form" action="#" method="post">
+
+            <!--personal info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name <span class="required-star">*</span></label>
+                        <input type="text" id="fname" name="fname" placeholder="e.g. Mariam" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name <span class="required-star">*</span></label>
+                        <input type="text" id="lname" name="lname" placeholder="e.g. Meskhi" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required-star">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="MariamMeskhi@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth <span class="required-star">*</span></label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </fieldset>
+
+             <!-- program selection -->
+            <fieldset>
+                <legend>Program Selection</legend>
+
+                <div class="form-group">
+                    <label for="level">Degree Level <span class="required-star">*</span></label>
+                    <select id="level" name="level" required>
+                        <option value="" disabled selected>Select a level</option>
+                        <option value="bachelor">Bachelor's</option>
+                        <option value="master">Master's</option>
+                        <option value="single">Single-Cycle</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Program <span class="required-star">*</span></label>
+                    <select id="program" name="program" required>
+                        <option value="" disabled selected>Select a program</option>
+                        <optgroup label="Bachelor's">
+                            <option value="cs">Computer Science</option>
+                            <option value="math">Mathematics</option>
+                            <option value="math-app">Mathematics and Applications</option>
+                            <option value="management">Management</option>
+                            <option value="physics">Physics</option>
+                            <option value="architecture">Architecture</option>
+                            <option value="design">Design</option>
+                            <option value="law">Law</option>
+                            <option value="psychology">Psychology</option>
+                        </optgroup>
+                        <optgroup label="Master's">
+                            <option value="embedded">Embedded Computing Systems</option>
+                            <option value="finances">Finances</option>
+                            <option value="ip">Intellectual Property</option>
+                        </optgroup>
+                        <optgroup label="Single-Cycle">
+                            <option value="medicine">Medicine</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Study Language <span class="required-star">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="language" value="english" checked>
+                            English
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="language" value="georgian">
+                            Georgian
+                        </label>
+                    </div>
+                </div>
+
+            
+            </fieldset>
+
+            <!-- background -->
+            <fieldset>
+                <legend>Documents</legend>
+
+
+                <div class="form-group">
+                    <label>Documents Available <span class="required-star">*</span></label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="docs" value="transcript">
+                            Academic Transcript
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="docs" value="passport">
+                            Passport / ID Copy
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="docs" value="english-cert">
+                            English Proficiency Certificate
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="docs" value="recommendation">
+                            Letter of Recommendation
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- motivation -->
+            <fieldset>
+                <legend>Motivation &amp; Requests</legend>
+
+                <div class="form-group">
+                    <label for="motivation">Motivation Letter <span class="required-star">*</span></label>
+                    <textarea id="motivation" name="motivation" rows="7"
+                        placeholder="Tell us why you want to study at KIU, what drives your interest in this program, and what you hope to achieve..." required></textarea>
+                </div>
+
+            <!-- Submit -->
+            <div class="form-submit">
+                <p class="submit-note">By submitting this form you confirm that all information provided is accurate and complete.</p>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+
+        </form>
+    </section>
 </body>
 </html>
