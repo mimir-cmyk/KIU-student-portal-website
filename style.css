@@ -898,10 +898,13 @@ legend {
 }
 
 
-/*for mobile*/
-@media (max-width: 768px) {
+/*for mobile optimizashun*/
+@media (max-width: 700px) {
     .about-content {
         flex-direction: column;
+    }
+    .text-box h1{
+        font-size: 20px;
     }
      .cards-grid {
         grid-template-columns: 1fr;
