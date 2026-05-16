@@ -897,6 +897,9 @@ legend {
     width: 100%;
 }
 
+nav .fa-solid{
+    display: none;
+}/*hide menu icons on larger devices*/
 
 /*for mobile optimizashun*/
 @media (max-width: 700px) {
@@ -906,6 +909,28 @@ legend {
     .text-box h1{
         font-size: 20px;
     }
+    nav .fa-solid{
+    display: block;
+    margin:10px;
+    font-size: 22px;
+    cursor: pointer;
+    }
+.nav-links ul li{
+    display: block;  
+}
+.nav-links{
+    position: absolute;
+    background: #f4f1a5;
+    height:100vh;
+    width:200px;
+    top:0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+}
+.nav-links ul{
+    padding: 23px;
+}
      .cards-grid {
         grid-template-columns: 1fr;
     }
